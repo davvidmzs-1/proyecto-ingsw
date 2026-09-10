@@ -18,7 +18,7 @@ El sitio publicado en GitHub Pages es la entrega oficial del trabajo. **No se en
 
 ## Usuario / cliente real
 
-**Motel Piel con Piel** — negocio de alojamiento por horas que actualmente gestiona la disponibilidad de habitaciones y el registro de ingresos de forma manual (a mano o de palabra en recepción), lo que genera errores de doble ocupación y dificulta llevar un control claro de tarifas y horarios.
+**[Nombre del motel]** — negocio de alojamiento por horas que actualmente gestiona la disponibilidad de habitaciones y el registro de ingresos de forma manual (a mano o de palabra en recepción), lo que genera errores de doble ocupación y dificulta llevar un control claro de tarifas y horarios.
 
 ## Metodología de diseño y desarrollo elegida
 
@@ -32,7 +32,7 @@ Elegimos este enfoque porque el sistema tiene un dominio acotado y bien delimita
 
 | Entrega | Estado | Enlace |
 |---|---|---|
-| 1. Conceptualización | 🔲 Pendiente | [Ver documento](docs/conceptualizacion.md) |
+| 1. Conceptualización | ✅ Entregado | [Ver documento](docs/conceptualizacion.md) |
 | 2. Análisis | 🔲 Pendiente | [Ver documento](docs/analisis.md) |
 | 3. Diseño | 🔲 Pendiente | [Ver documento](docs/diseno.md) |
 
