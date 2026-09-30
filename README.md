@@ -12,13 +12,14 @@ El sitio publicado en GitHub Pages es la entrega oficial del trabajo. **No se en
 
 | Nombre completo | Rol / Responsabilidad principal | Usuario de GitHub |
 |---|---|---|
-| Francisco David Martínez | Desarrollo técnico y diseño del sistema | [@davvidmzs-1] |
-| Fabrizio Urán | Análisis de requisitos | [@usuario2] |
-| Aquiles Augusto Vera | Modelado y diagramas | [@usuario3] |
+| Francisco David Martínez Salinas | Desarrollo técnico y diseño del sistema | [@davvidmzs-1](https://github.com/davvidmzs-1) |
+| Jonathan Fabrizio Urán Aguilera | Análisis de requisitos | [@bxomau](https://github.com/bxomau) |
+| Aquiles Augusto Vera Salinas | Modelado y diagramas | [@Agussv89](https://github.com/Agussv89) |
+| Blas Arnaldo Páez Sosa | Documentación y ejercitarios | [@blasarnaldopaezsosa-glitch](https://github.com/blasarnaldopaezsosa-glitch) |
 
 ## Usuario / cliente real
 
-**[Nombre del motel]** — negocio de alojamiento por horas que actualmente gestiona la disponibilidad de habitaciones y el registro de ingresos de forma manual (a mano o de palabra en recepción), lo que genera errores de doble ocupación y dificulta llevar un control claro de tarifas y horarios.
+**Motel Piel con Piel** — negocio de alojamiento por horas ubicado en Paraguarí, que actualmente gestiona la disponibilidad de habitaciones y el registro de ingresos de forma manual (a mano o de palabra en recepción), lo que genera errores de doble ocupación y dificulta llevar un control claro de tarifas y horarios.
 
 ## Metodología de diseño y desarrollo elegida
 
@@ -44,17 +45,9 @@ Elegimos este enfoque porque el sistema tiene un dominio acotado y bien delimita
   ├─ conceptualizacion.md
   ├─ analisis.md
   └─ diseno.md
-/diagramas      → imágenes o archivos fuente de los diagramas (UML, mockups, etc.)
-/src            → código fuente, si el grupo decide avanzar con una implementación
+/ejercitarios   → respuestas grupales a los ejercitarios de cada unidad
 ```
 
 ## Cómo publicar este sitio en GitHub Pages
 
-1. Suban este repositorio a GitHub (público, o privado con acceso otorgado a la cátedra).
-2. Vayan a **Settings → Pages**.
-3. En **Source**, seleccionen la rama `main` (o `master`) y la carpeta **/docs**.
-4. Guarden. GitHub publicará el sitio en `https://davvidmzs-1.github.io/proyecto-ingsw/` en unos minutos.
-5. Verifiquen que `docs/index.md` se muestre correctamente como página principal.
-6. Actualicen el enlace del sitio arriba en este README y entréguenlo a la cátedra antes de la fecha límite de cada entrega.
-
-> 💡 Tip: cada vez que hagan `push` a la rama publicada, el sitio se actualiza automáticamente. No es necesario volver a configurar nada en las siguientes entregas.
+Ya está configurado: GitHub Pages sirve el sitio desde la carpeta `/docs` de la rama `main`. Cada `push` a esa rama actualiza el sitio automáticamente en `https://davvidmzs-1.github.io/proyecto-ingsw/` en unos minutos, sin necesidad de reconfigurar nada.

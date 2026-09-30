@@ -5,9 +5,10 @@
 **Nombre del sistema:** Sistema de Gestión de Reservas y Ocupación para Motel
 
 **Integrantes:**
-- Francisco David Martínez — Desarrollo técnico y diseño del sistema
-- Fabrizio Urán — Análisis de requisitos
-- Aquiles Augusto Vera — Modelado y diagramas
+- Francisco David Martínez Salinas — Desarrollo técnico y diseño del sistema
+- Jonathan Fabrizio Urán Aguilera — Análisis de requisitos
+- Aquiles Augusto Vera Salinas — Modelado y diagramas
+- Blas Arnaldo Páez Sosa — Documentación y ejercitarios
 
 **Usuario/cliente real:** Motel Piel con Piel — negocio de alojamiento por horas ubicado en Paraguari, que actualmente gestiona la disponibilidad de habitaciones y el registro de ingresos de forma manual.
 

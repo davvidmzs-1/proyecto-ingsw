@@ -6,9 +6,10 @@ Sistema para gestionar la disponibilidad, reserva y ocupación de las habitacion
 
 ## Integrantes del grupo
 
-- Francisco David Martínez — Desarrollo técnico y diseño del sistema
-- Fabrizio Urán — Análisis de requisitos
-- Aquiles Augusto Vera — Modelado y diagramas
+- Francisco David Martínez Salinas — Desarrollo técnico y diseño del sistema
+- Jonathan Fabrizio Urán Aguilera — Análisis de requisitos
+- Aquiles Augusto Vera Salinas — Modelado y diagramas
+- Blas Arnaldo Páez Sosa — Documentación y ejercitarios
 
 ## Entregas
 
