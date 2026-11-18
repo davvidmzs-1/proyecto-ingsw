@@ -1,0 +1,23 @@
+%% Diagrama de actividad: check-out con cálculo del cobro y pase a "en limpieza".
+flowchart TD
+    INI((" ")) --> A[Recepcionista selecciona la habitación ocupada en el panel]
+    A --> B[Sistema registra la hora de check-out]
+    B --> C[Sistema obtiene la tarifa vigente al momento del check-in]
+    C --> D[Calcular tiempo de permanencia]
+    D --> E{¿Superó la duración incluida<br/>más la tolerancia?}
+    E -- No --> F[Monto = precio base de la franja]
+    E -- Sí --> G[Calcular horas excedentes<br/>redondeando hacia arriba]
+    G --> H[Monto = precio base +<br/>horas excedentes × precio por hora excedente]
+    F --> I[Mostrar detalle del cobro]
+    H --> I
+    I --> J{¿Recepcionista confirma<br/>el pago en efectivo?}
+    J -- No, cancela --> K[Se descarta el check-out;<br/>la habitación sigue ocupada]
+    K --> FIN1((("●")))
+    J -- Sí --> L[Registrar Cobro asociado a la Estadía]
+    L --> M[Cerrar la Estadía]
+    M --> N[Cambiar estado de la habitación a<br/>«en limpieza»]
+    N --> O[Actualizar el panel de habitaciones]
+    O --> FIN2((("●")))
+
+    classDef nodo fill:#f4f4f4,stroke:#555555;
+    class A,B,C,D,F,G,H,I,K,L,M,N,O nodo;

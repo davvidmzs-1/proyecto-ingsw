@@ -1,0 +1,61 @@
+%% Modelo de dominio: diagrama de clases CONCEPTUAL.
+%% Sin métodos, sin tipos de dato de implementación y sin claves foráneas.
+classDiagram
+    direction LR
+
+    class TipoHabitacion["TipoHabitación"] {
+        nombre
+        descripción
+    }
+    class Habitacion["Habitación"] {
+        número
+        estado
+    }
+    class Tarifa["Tarifa (franja horaria)"] {
+        nombre de la franja
+        hora de inicio
+        hora de fin
+        duración incluida
+        precio base
+        precio por hora excedente
+        vigente desde
+    }
+    class Cliente {
+        nombre o alias (opcional)
+        teléfono (opcional)
+    }
+    class Reserva {
+        fecha y hora prevista
+        duración prevista
+        estado
+        fecha y hora de registro
+    }
+    class Estadia["Estadía"] {
+        hora de check-in
+        hora de vencimiento
+        hora de check-out
+        tipo de ingreso
+    }
+    class Cobro {
+        monto
+        horas excedentes
+        fecha y hora
+        anulado
+        motivo de anulación
+    }
+    class Usuario {
+        nombre
+        rol
+    }
+
+    TipoHabitacion "1" -- "1..*" Habitacion : clasifica
+    TipoHabitacion "1" -- "1..*" Tarifa : tiene precios en
+    Cliente "1" -- "1..*" Reserva : solicita
+    Habitacion "1" -- "0..*" Reserva : es reservada en
+    Habitacion "1" -- "0..*" Estadia : se ocupa en
+    Reserva "0..1" -- "0..1" Estadia : se concreta en
+    Tarifa "1" -- "0..*" Estadia : se aplica a
+    Estadia "1" -- "0..*" Cobro : genera
+    Usuario "1" -- "0..*" Reserva : registra
+    Usuario "1" -- "0..*" Estadia : registra
+    Usuario "1" -- "0..*" Cobro : cobra o anula

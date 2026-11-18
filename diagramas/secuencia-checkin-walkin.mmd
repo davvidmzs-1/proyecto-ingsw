@@ -1,0 +1,33 @@
+%% Diagrama de secuencia: check-in de un cliente walk-in (sin reserva previa).
+sequenceDiagram
+    autonumber
+    actor R as Recepcionista
+    participant P as :Panel de habitaciones
+    participant F as :Formulario de check-in
+    participant G as :Gestor de estadías
+    participant H as :Habitación
+    participant T as :Tarifa
+    participant E as :Estadía
+
+    R->>P: Selecciona una habitación libre
+    P->>F: Abre el formulario (tipo de ingreso = walk-in)
+    F->>G: Solicitar franjas vigentes(habitación)
+    G->>T: Obtener tarifas del tipo de habitación
+    T-->>G: Franjas y precios vigentes
+    G-->>F: Franja sugerida según la hora actual
+    R->>F: Confirma la franja (sin cargar datos personales)
+    F->>G: Registrar check-in(habitación, franja)
+    G->>H: Verificar estado
+    alt La habitación está libre y sin reserva próxima
+        H-->>G: Libre
+        G->>E: «crear» Estadía(hora de check-in, tarifa)
+        E-->>G: Hora de vencimiento calculada
+        G->>H: Cambiar estado a "ocupada"
+        G-->>F: Check-in registrado
+        F-->>R: Muestra la hora de vencimiento
+        F->>P: Actualiza la grilla
+    else La habitación ya no está disponible
+        H-->>G: Ocupada / en limpieza / reservada
+        G-->>F: Rechazo (RN-01)
+        F-->>R: Aviso: elegir otra habitación
+    end

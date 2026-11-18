@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" font-family="Arial, Helvetica, sans-serif">
+  <title>Mockup de baja fidelidad: Formulario de check-in</title>
+
+  <rect x="1" y="1" width="818" height="558" fill="#ffffff" stroke="#555" stroke-width="2"/>
+  <rect x="1" y="1" width="818" height="50" fill="#d9d9d9" stroke="#555" stroke-width="2"/>
+  <text x="20" y="32" font-size="18" font-weight="bold" fill="#333">Check-in · Habitación 6 (Estándar)</text>
+  <text x="640" y="32" font-size="13" fill="#333">← Volver al panel</text>
+
+  <!-- Tipo de ingreso -->
+  <text x="40" y="90" font-size="14" font-weight="bold" fill="#333">1. Tipo de ingreso</text>
+  <rect x="40" y="102" width="200" height="34" fill="#9e9e9e" stroke="#333"/>
+  <circle cx="58" cy="119" r="7" fill="#fff" stroke="#333"/>
+  <circle cx="58" cy="119" r="3.5" fill="#333"/>
+  <text x="72" y="124" font-size="13" fill="#111">Walk-in (sin reserva)</text>
+  <rect x="250" y="102" width="200" height="34" fill="#fff" stroke="#555"/>
+  <circle cx="268" cy="119" r="7" fill="#fff" stroke="#333"/>
+  <text x="282" y="124" font-size="13" fill="#222">Con reserva</text>
+  <rect x="470" y="102" width="300" height="34" fill="#f0f0f0" stroke="#aaa" stroke-dasharray="4 3"/>
+  <text x="482" y="124" font-size="12" fill="#888">Buscar reserva (alias o teléfono)… ▾</text>
+
+  <!-- Franja -->
+  <text x="40" y="175" font-size="14" font-weight="bold" fill="#333">2. Franja horaria (tarifa vigente)</text>
+  <rect x="40" y="187" width="410" height="34" fill="#fff" stroke="#555"/>
+  <text x="52" y="209" font-size="13" fill="#222">Nocturna 20:00–07:59 · 3 h incluidas · Gs. 120.000</text>
+  <text x="430" y="209" font-size="13" fill="#222">▾</text>
+  <text x="470" y="209" font-size="12" fill="#666">Sugerida según la hora actual</text>
+  <text x="40" y="243" font-size="12" fill="#666">Hora excedente: Gs. 30.000 · tolerancia 10 min</text>
+
+  <!-- Datos opcionales -->
+  <text x="40" y="285" font-size="14" font-weight="bold" fill="#333">3. Datos del cliente</text>
+  <rect x="40" y="297" width="730" height="60" fill="#f4f4f4" stroke="#aaa"/>
+  <text x="55" y="322" font-size="13" fill="#444">No se solicitan datos personales para un walk-in (RNF de privacidad).</text>
+  <text x="55" y="342" font-size="12" fill="#777">Si se elige "Con reserva", aquí se muestran el alias y el teléfono de la reserva (solo lectura).</text>
+
+  <!-- Resumen -->
+  <text x="40" y="395" font-size="14" font-weight="bold" fill="#333">Resumen</text>
+  <rect x="40" y="407" width="730" height="70" fill="#fff" stroke="#555"/>
+  <text x="55" y="432" font-size="13" fill="#222">Ingreso: 21:42</text>
+  <text x="250" y="432" font-size="13" font-weight="bold" fill="#222">Vence: 00:42</text>
+  <text x="450" y="432" font-size="13" fill="#222">Monto base: Gs. 120.000</text>
+  <text x="55" y="460" font-size="12" fill="#666">El cobro final se calcula en el check-out según el tiempo real de permanencia.</text>
+
+  <!-- Botones -->
+  <rect x="470" y="500" width="140" height="38" fill="#fff" stroke="#555"/>
+  <text x="512" y="524" font-size="14" fill="#222">Cancelar</text>
+  <rect x="625" y="500" width="145" height="38" fill="#555" stroke="#333"/>
+  <text x="641" y="524" font-size="14" font-weight="bold" fill="#fff">Confirmar check-in</text>
+</svg>

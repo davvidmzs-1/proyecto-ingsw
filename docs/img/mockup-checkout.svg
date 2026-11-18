@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" font-family="Arial, Helvetica, sans-serif">
+  <title>Mockup de baja fidelidad: Check-out y cobro</title>
+
+  <rect x="1" y="1" width="818" height="558" fill="#ffffff" stroke="#555" stroke-width="2"/>
+  <rect x="1" y="1" width="818" height="50" fill="#d9d9d9" stroke="#555" stroke-width="2"/>
+  <text x="20" y="32" font-size="18" font-weight="bold" fill="#333">Check-out y cobro · Habitación 5 (Estándar)</text>
+  <text x="640" y="32" font-size="13" fill="#333">← Volver al panel</text>
+
+  <!-- Datos de la estadía -->
+  <text x="40" y="90" font-size="14" font-weight="bold" fill="#333">Estadía</text>
+  <rect x="40" y="102" width="350" height="150" fill="#fff" stroke="#555"/>
+  <text x="55" y="128" font-size="13" fill="#222">Tipo de ingreso: Walk-in</text>
+  <text x="55" y="153" font-size="13" fill="#222">Check-in: 18:35</text>
+  <text x="55" y="178" font-size="13" fill="#222">Vencimiento: 21:35</text>
+  <text x="55" y="203" font-size="13" fill="#222">Check-out: 22:10</text>
+  <text x="55" y="232" font-size="13" font-weight="bold" fill="#222">Permanencia: 3 h 35 min</text>
+
+  <!-- Detalle del cobro -->
+  <text x="420" y="90" font-size="14" font-weight="bold" fill="#333">Detalle del cobro</text>
+  <rect x="420" y="102" width="360" height="150" fill="#fff" stroke="#555"/>
+  <text x="435" y="128" font-size="13" fill="#222">Tarifa (al check-in): Diurna 08:00–19:59</text>
+  <line x1="435" y1="140" x2="765" y2="140" stroke="#ccc"/>
+  <text x="435" y="160" font-size="13" fill="#222">Precio base (3 h)</text>
+  <text x="680" y="160" font-size="13" fill="#222">100.000</text>
+  <text x="435" y="185" font-size="13" fill="#222">Horas excedentes: 1 × 25.000</text>
+  <text x="680" y="185" font-size="13" fill="#222">25.000</text>
+  <line x1="435" y1="200" x2="765" y2="200" stroke="#555"/>
+  <text x="435" y="230" font-size="16" font-weight="bold" fill="#111">TOTAL Gs.</text>
+  <text x="668" y="230" font-size="16" font-weight="bold" fill="#111">125.000</text>
+
+  <!-- Nota -->
+  <rect x="40" y="275" width="740" height="60" fill="#f4f4f4" stroke="#aaa"/>
+  <text x="55" y="300" font-size="12" fill="#444">Exceso de 35 min: supera la tolerancia de 10 min, se cobra 1 hora excedente completa (RN-05).</text>
+  <text x="55" y="320" font-size="12" fill="#444">Al confirmar, la habitación pasa automáticamente a "En limpieza" (RN-06).</text>
+
+  <!-- Pago -->
+  <text x="40" y="370" font-size="14" font-weight="bold" fill="#333">Pago</text>
+  <rect x="40" y="382" width="250" height="34" fill="#fff" stroke="#555"/>
+  <text x="52" y="404" font-size="13" fill="#222">Medio: Efectivo ▾</text>
+  <rect x="310" y="382" width="200" height="34" fill="#fff" stroke="#555"/>
+  <text x="322" y="404" font-size="13" fill="#888">Recibido: Gs. ______</text>
+  <text x="530" y="404" font-size="13" fill="#222">Vuelto: Gs. —</text>
+
+  <!-- Botones -->
+  <rect x="470" y="500" width="140" height="38" fill="#fff" stroke="#555"/>
+  <text x="512" y="524" font-size="14" fill="#222">Cancelar</text>
+  <rect x="625" y="500" width="155" height="38" fill="#555" stroke="#333"/>
+  <text x="640" y="524" font-size="14" font-weight="bold" fill="#fff">Confirmar cobro</text>
+</svg>

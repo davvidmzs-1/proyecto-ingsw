@@ -6,6 +6,9 @@ Esta carpeta contiene las respuestas grupales a los ejercitarios de cada unidad,
 |---|---|---|
 | 1 | [Guía del ejercitario](https://github.com/fjlesme/ingsw1/blob/main/ejercitarios/unidad-01-ejercitario.docx) | [respuestas.md](unidad-01/respuestas.md) |
 | 2 | [Guía del ejercitario](https://github.com/fjlesme/ingsw1/blob/main/ejercitarios/unidad-02-ejercitario.docx) | [respuestas.md](unidad-02/respuestas.md) |
+| 3 | [Guía del ejercitario](https://github.com/fjlesme/ingsw1/blob/main/ejercitarios/unidad-03-ejercitario.docx) | [respuestas.md](unidad-03/respuestas.md) |
+| 4 | [Guía del ejercitario](https://github.com/fjlesme/ingsw1/blob/main/ejercitarios/unidad-04-ejercitario.pdf) | [respuestas.md](unidad-04/respuestas.md) |
+| 5 | [Guía del ejercitario](https://github.com/fjlesme/ingsw1/blob/main/ejercitarios/unidad-05-ejercitario.pdf) | [respuestas.md](unidad-05/respuestas.md) |
 
 ## Cómo entregar
 

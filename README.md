@@ -34,7 +34,7 @@ Elegimos este enfoque porque el sistema tiene un dominio acotado y bien delimita
 | Entrega | Estado | Enlace |
 |---|---|---|
 | 1. Conceptualización | ✅ Entregado | [Ver documento](docs/conceptualizacion.md) |
-| 2. Análisis | 🔲 Pendiente | [Ver documento](docs/analisis.md) |
+| 2. Análisis | ✅ Entregado | [Ver documento](docs/analisis.md) |
 | 3. Diseño | 🔲 Pendiente | [Ver documento](docs/diseno.md) |
 
 ## Estructura del repositorio
@@ -44,7 +44,9 @@ Elegimos este enfoque porque el sistema tiene un dominio acotado y bien delimita
   ├─ index.md          → página principal del sitio
   ├─ conceptualizacion.md
   ├─ analisis.md
-  └─ diseno.md
+  ├─ diseno.md
+  └─ img/              → imágenes publicadas (diagramas UML exportados a SVG y mockups)
+/diagramas      → fuentes de los diagramas (Mermaid .mmd), se exportan a docs/img/
 /ejercitarios   → respuestas grupales a los ejercitarios de cada unidad
 ```
 

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" font-family="Arial, Helvetica, sans-serif">
+  <title>Arquitectura en capas del sistema de autogestión de alumnos</title>
+  <rect x="0" y="0" width="760" height="470" fill="#ffffff"/>
+  <text x="380" y="30" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Autogestión de alumnos: arquitectura en capas</text>
+
+  <rect x="40" y="50" width="680" height="80" fill="#eeeeee" stroke="#444" stroke-width="2"/>
+  <text x="60" y="78" font-size="15" font-weight="bold" fill="#222">1. Presentación</text>
+  <text x="60" y="100" font-size="13" fill="#333">Páginas web y vista móvil: login, inscripción a materias y exámenes, notas, estado de cuenta.</text>
+  <text x="60" y="118" font-size="13" fill="#333">Muestra datos y captura lo que hace el alumno; no decide reglas.</text>
+
+  <text x="380" y="148" font-size="18" fill="#444" text-anchor="middle">▼ ▲</text>
+
+  <rect x="40" y="158" width="680" height="80" fill="#e0e0e0" stroke="#444" stroke-width="2"/>
+  <text x="60" y="186" font-size="15" font-weight="bold" fill="#222">2. Servicios de aplicación</text>
+  <text x="60" y="208" font-size="13" fill="#333">Coordina cada caso de uso: "inscribir a examen" llama a validar correlativas, verificar</text>
+  <text x="60" y="226" font-size="13" fill="#333">deuda y registrar la inscripción; maneja sesión y permisos.</text>
+
+  <text x="380" y="256" font-size="18" fill="#444" text-anchor="middle">▼ ▲</text>
+
+  <rect x="40" y="266" width="680" height="80" fill="#cfcfcf" stroke="#444" stroke-width="2"/>
+  <text x="60" y="294" font-size="15" font-weight="bold" fill="#222">3. Lógica de negocio (dominio)</text>
+  <text x="60" y="316" font-size="13" fill="#333">Reglas académicas: correlatividades, cupos, fechas de inscripción, cálculo de promedios</text>
+  <text x="60" y="334" font-size="13" fill="#333">y condición de regular o libre.</text>
+
+  <text x="380" y="364" font-size="18" fill="#444" text-anchor="middle">▼ ▲</text>
+
+  <rect x="40" y="374" width="680" height="80" fill="#bdbdbd" stroke="#444" stroke-width="2"/>
+  <text x="60" y="402" font-size="15" font-weight="bold" fill="#222">4. Acceso a datos</text>
+  <text x="60" y="424" font-size="13" fill="#333">Repositorios que leen y graban alumnos, materias, inscripciones y pagos en la base de datos;</text>
+  <text x="60" y="442" font-size="13" fill="#333">ninguna capa superior escribe SQL directamente.</text>
+</svg>

@@ -1,0 +1,50 @@
+%% Diagrama de casos de uso (UML) representado con flowchart de Mermaid.
+%% Actores a la izquierda/derecha, casos de uso en óvalos y el límite del sistema como subgrafo.
+flowchart LR
+    REC["«actor»<br/>Recepcionista"]
+    ENC["«actor»<br/>Encargado / Administrador"]
+    TMP["«actor»<br/>Temporizador del sistema"]
+
+    ENC == "generalización<br/>(hereda de)" ==> REC
+
+    subgraph SIS["Sistema de Gestión de Reservas y Ocupación para Motel"]
+        direction TB
+        CU10(["CU-10 Iniciar sesión"])
+        CU05(["CU-05 Consultar panel de habitaciones"])
+        CU01(["CU-01 Registrar reserva"])
+        CU07(["CU-07 Cancelar reserva"])
+        CU02(["CU-02 Registrar check-in<br/>(con reserva o walk-in)"])
+        CU03(["CU-03 Registrar check-out y cobro"])
+        CU08(["CU-08 Liberar habitación<br/>(fin de limpieza)"])
+        CU09(["CU-09 Consultar historial de ocupación"])
+        CU04(["CU-04 Gestionar tarifas"])
+        CU06(["CU-06 Gestionar habitaciones"])
+        CU11(["CU-11 Gestionar usuarios"])
+        CU12(["CU-12 Generar reporte de ocupación e ingresos"])
+        CU13(["CU-13 Anular cobro"])
+        CALC(["Calcular monto a cobrar"])
+    end
+
+    REC --- CU10
+    REC --- CU05
+    REC --- CU01
+    REC --- CU07
+    REC --- CU02
+    REC --- CU03
+    REC --- CU08
+    REC --- CU09
+
+    ENC --- CU04
+    ENC --- CU06
+    ENC --- CU11
+    ENC --- CU12
+    ENC --- CU13
+
+    TMP --- CU07
+
+    CU03 -. "«include»" .-> CALC
+
+    classDef actor fill:#ffffff,stroke:#333333,stroke-width:2px;
+    classDef cu fill:#f4f4f4,stroke:#555555;
+    class REC,ENC,TMP actor;
+    class CU01,CU02,CU03,CU04,CU05,CU06,CU07,CU08,CU09,CU10,CU11,CU12,CU13,CALC cu;
